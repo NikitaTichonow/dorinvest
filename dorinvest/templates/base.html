@@ -1,0 +1,64 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/null.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+{% block extra_css %}{% endblock %}
+
+
+<div class="base-page">
+    <header class="base-header">
+        <div class="base-header_logo">
+            <img src="{% static 'img/dorinvest_logo_img.png' %}" alt="logo" width="271px">
+            <img src="{% static 'img/dorinvest_logo_text.png' %}" alt="logo" width="271px">
+        </div>
+        <nav>
+            <ul class="navigation">
+                {% if upcoming_show %}
+                    <li><a href="{% url 'show' slug=upcoming_show.slug %}">Ближайшая выставка</a></li>
+                {% else %}
+                     <li><a href="{% url 'ended_show' %}">Прошедшие выставки</a></li>
+                {% endif %}
+                <li><a href="{% url 'ended_show' %}">Прошедшие выставки</a></li>
+                <li><a href="{% url 'animals_list' %}">Каталог животных</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!--  --><!--  --><!--  --><!--  --><!--  -->
+    {% block content %} {% endblock %}
+<!--  --><!--  --><!--  --><!--  --><!--  -->
+
+
+    <footer class="base-footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-left">
+                <div class="footer-left-info">
+                    <h3>Контакты и адрес</h3>
+                    <p>Организатор выставки: ГБУ “ДОРИНВЕСТ”<br>г. Москва, 2-я Тверская-Ямская улица, д.2</p>
+                    <p>8(499)250-06-30</p>
+                </div>
+                <div class="footer-socials">
+                    <h3>Мы в социальных сетях</h3>
+                    <ul>
+                        <li><a href="">Муниципальный приют “Зеленоград”</a></li>
+                        <li><a href="">Приют “Зоорассвет”</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h3>Партнеры выставки</h3>
+                <ul class="footer-sponsors">
+                    <li><a href=""><img src="{% static 'img/sponsor1.png' %}" alt="sponsor1"></a></li>
+                    <li><a href=""><img src="{% static 'img/sponsor3.png' %}" alt="sponsor3"></a></li>
+                    <li><a href=""><img src="{% static 'img/sponsor2.png' %}" alt="sponsor2"></a></li>
+                    
+                    <li><a href=""><img src="{% static 'img/sponsor4.png' %}" alt="sponsor3"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+{% block extra_js %}{% endblock %}
+

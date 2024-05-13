@@ -1,0 +1,670 @@
+
+.main_show {
+    margin-top: -63px;
+}
+
+.content_foto img {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.slider-wrapper {
+    margin-top: 200px;
+    margin-bottom: 500px;
+    height: 500px;
+}
+.slider-wrapper h2 {
+    font-family: "RobotoCondensed Medium", "Open Sans";
+    font-size: 58px;
+    margin-bottom: 20px;
+    margin-left: 101px;
+}
+.image-slider__image {
+    width: 490px;
+}
+.image-slider__image > img {
+    border-radius: 14px;
+    width: 490px;
+    height: 490px;
+    object-fit: cover;
+}
+.slider__animal-description {
+    position: absolute;
+    bottom: 0;
+    width: 490px;
+    overflow: hidden;
+    height: 110px;
+    background: rgb(223, 208, 241);
+    padding: 20px;
+    border-radius: 15px;
+    color: #000;
+    font-size: 16px;
+}
+.slider__animal-description h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.slider__animal-description p{
+    font-size: 18px;
+}
+
+.slider-wrapper button {
+    background-color: #79BD9A;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin-left: 537px;
+    margin-top: 50px;
+    font-size: 33px;
+    cursor: pointer;
+    width: 368px;
+    height: 98px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+/*   ИЩУ ДРУГА    */
+
+.promo0 > h1 {
+    margin-top: 120px;
+    margin-left: 101px;
+    margin-bottom: 70px;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: left;
+    color: #000000;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+.promo1 > p {
+    padding-top: 10px;
+    margin-left: 175px;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 150%;
+    color: #000000;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.promo2 > p {
+    margin-top: -750px;
+    margin-left: 760px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 150%;
+    color: #000000;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.img1 {
+    margin-top: 1px;
+    position: relative;
+    top: -550px;
+    transform: translateX(0px);
+
+
+}
+
+
+/*СЛАЙДЕР НОМЕР 1*/
+
+.animals_slider > h1 {
+    margin-top: 65px;
+    margin-left: 101px;
+    font-weight: 500;
+    color: #000000;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+    font-size: 58px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 10px;
+}
+
+.container {
+    margin-top: 70px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 1350px;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 2%;
+}
+
+.slide {
+    position: relative;
+    width: 1170px;
+    height: 567px;
+    display: flex;
+    gap: 15px;
+    /*overflow-x: auto;*/
+    /*flex: none;*/
+    scroll-snap-align: start;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+    margin: 10px;
+}
+
+
+
+.span {
+    position: absolute;
+    margin-left: -40px;
+    width: 350px;
+    height: 110px;
+    bottom: 14px;
+    left: 40px;
+    background: rgb(223, 208, 241);
+    padding: 10px;
+    border-radius: 15px;
+    color: #000;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background: #79BD9A;
+    border-radius: 4px;
+
+}
+
+
+form .button {
+    background-color: #79BD9A;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin-left: 537px;
+    margin-top: 108px;
+    font-size: 33px;
+    cursor: pointer;
+    width: 368px;
+    height: 98px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+
+/*4 причины взять питомца из приюта*/
+
+.content_foto2 > h1 {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 63px;
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+.promo3 > p {
+    margin-top: 130px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    /* font-weight: 600; */
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.promo3 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.promo4 > p {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    /* font-weight: 600; */
+    margin-top: -80px;
+    margin-right: 108px;
+    padding-left: 880px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.promo4 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.promo5 > p {
+    margin-top: 440px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+   /* font-weight: 600; */
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.promo5 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.promo6 > p {
+    margin-top: -75px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    /* font-weight: 600; */
+    text-align: right;
+    margin-right: 108px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.promo6 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.img4 {
+    position: absolute;
+    z-index: -1;
+    top: 2960px;
+    transform: translateX(0px);
+}
+
+.img5 {
+    position: absolute;
+    top: 3280px;
+    transform: translateX(1040px);
+}
+
+.img6 {
+   position: absolute;
+    z-index: -2;
+    top: 2700px;
+    transform: translateX(30px);
+}
+
+.img7 {
+   position: absolute;
+    z-index: -2;
+    top: 3180px;
+    transform: translateX(130px);
+}
+
+.img8 {
+  position: absolute;
+    z-index: -2;
+    top: 2700px;
+    transform: translateX(810px);
+}
+
+.img9 {
+  position: absolute;
+    z-index: -2;
+    top: 3220px;
+    transform: translateX(810px);
+}
+
+.img10 {
+ position: absolute;
+    z-index: -2;
+    top: 2974px;
+    transform: translateX(450px);
+}
+
+.img11 {
+  position: absolute;
+    z-index: -2;
+    top: 2970px;
+    transform: translateX(1090px);
+}
+
+.img12 {
+  position: absolute;
+    z-index: -2;
+    top: 3057px;
+    transform: translateX(845px);
+}
+
+/*Счастливые истории*/
+
+.story_slider > h1 {
+    margin-top: 305px;
+    font-size: 58px;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 108px;
+    color: #000000;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+/*  Второй слайдер */
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 10px;
+}
+
+.container2 {
+    margin-top: 70px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 1290px;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 5%;
+}
+
+.slide2 {
+    position: relative;
+    width: 1070px;
+    height: 567px;
+    display: flex;
+    gap: 15px;
+    /*overflow-x: auto;*/
+    /*flex: none;*/
+    scroll-snap-align: start;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+    margin: 10px;
+}
+
+
+
+.story_slider span {
+    position: absolute;
+    margin-left: -40px;
+    width: 350px;
+    height: 110px;
+    bottom: 14px;
+    left: 40px;
+    background: rgb(223, 208, 241);
+    padding: 10px;
+    border-radius: 15px;
+    color: #000;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 15px;
+    background: #79BD9A;
+    border-radius: 4px;
+
+}
+
+/*Как стать хозяйном*/
+.owner > h1 {
+    margin-top: 200px;
+    color: #000000;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 70px;
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+.owner1 > p {
+    margin-top: 130px;
+    color: #000000;
+    font-size: 32px;
+    /* font-weight: 800; */
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.owner1 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.owner2 > p {
+
+    color: #000000;
+    font-size: 32px;
+    /* font-weight: 800; */
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 808px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.owner2 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.owner3 > p {
+    margin-top: 90px;
+    color: #000000;
+    font-size: 32px;
+    /* font-weight: 800; */
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.owner3 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.owner4 > p {
+
+    color: #000000;
+    font-size: 32px;
+    /* font-weight: 800; */
+    text-align: left;
+    margin-left: 798px;
+    margin-top: 80px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.owner4 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.owner5 > p {
+    margin-top: 40px;
+   color: #000000;
+    font-size: 32px;
+    /* font-weight: 800; */
+    text-align: left;
+    margin-left: 108px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.owner5 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.owner6 > p {
+    margin-top: 120px;
+    color: #000000;
+    font-size: 32px;
+    /* font-weight: 800; */
+    text-align: left;
+    margin-left: 808px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.owner6 > p > strong {
+    color: rgb(32, 123, 68);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.img13 {
+    position: absolute;
+    top: 4740px;
+    transform: translateX(10px);
+
+}
+
+.img {
+    position: absolute;
+    top: 5770px;
+    transform: translateX(300px);
+}
+
+
+.wrapper {
+    margin-top: 170px;
+
+    background: rgb(239, 239, 239);
+
+    width: 1440px;
+    height: 269px;
+}
+
+.newsletter {
+    padding: 50px 2px;
+    text-align: center;
+    font-size: 25px;
+    background: rgb(223, 208, 241);
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+
+.newsletter > h1 {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+.newsletter > p {
+    padding-bottom: 70px;
+}
+
+input, button {
+    display: inline-block;
+    border-radius: 16px;
+    width: 380px;
+    height: 82px;
+    outline: none;
+    padding: 9px 18px;
+    margin-right: 10px;
+    background: #fff0ff;
+}
+
+input {
+    width: 30%;
+    background-color: white;
+}
+
+input[placeholder] {
+    color: #000000;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input[type="text"]::-moz-placeholder {
+    color: #000000;
+}
+
+button {
+    padding: 9px 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(121, 189, 154);
+}
+
+/*Где мы находимся */
+
+.way > h1 {
+    margin-top: 180px;
+     color: #000000;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 63px;
+    text-align: left;
+    margin-left: 96px;
+    padding-bottom:  35px;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+.way_card > img {
+    margin-top: 40px;
+    margin-left: 96px;
+}
+
+.way_house > img {
+    margin-top: 50px;
+    margin-left: 96px;
+}
+
+.way_phone > img {
+    margin-top: -125px;
+    margin-left: 890px;
+    text-align: right;
+}
+
+.way_ticket > img {
+    margin-top: 20px;
+    margin-left: 890px;
+    text-align: right;
+}
+
+.text_card > p {
+    font-family: "RobotoCondensed Regular", "Open Sans";
+     color: #000000;
+    font-size: 30px;
+    margin-left: 130px;
+    margin-top: -47px;
+}
+
+.text_house > p {
+    font-family: "RobotoCondensed Regular", "Open Sans";
+
+     font-size: 30px;
+    color: #000000;
+    margin-left: 130px;
+    margin-top: -30px;
+}
+
+.text_phone > p {
+    font-family: "RobotoCondensed Regular", "Open Sans";
+     color: #000000;
+    margin-right: 80px;
+    font-size: 30px;
+    margin-top: -120px;
+    padding-bottom: 35px;
+    text-align: right;
+}
+
+.text_ticket > p {
+    font-family: "RobotoCondensed Regular", "Open Sans";
+     color: #000000;
+    margin-left: 940px;
+     font-size: 30px;
+    margin-top: -35px;
+    text-align: left;
+}
+
+
+/*Карта*/
+.map > iframe {
+    margin-top: 100px;
+    margin-bottom: -170px;
+    z-index: 0;
+    width: 1440px;
+    height: 625px;
+
+}
+
+

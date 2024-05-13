@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "RobotoCondensed Medium";
+    src: url("../fonts/RobotoCondensed-Medium.ttf");
+}
+@font-face {
+    font-family: "RobotoCondensed Regular";
+    src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+.base-page {
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+}
+
+/* -------------------- header --------------------*/
+
+.base-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 19px 6.6% 0px;
+}
+.base-header_logo {
+    margin-right: 9%;
+    margin-top: 6px;
+    display: flex;
+}
+.base-header_logo img:nth-child(1){
+    width: 40px;
+    height: 37px;
+    margin-left: 4%;
+}
+.base-header_logo img:nth-child(2){
+    margin-left: 8px;
+    margin-top: 6px;
+    width: 211px;
+    height: 32px;
+}
+.base-header > nav {
+    width: 100%;
+}
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.navigation > li {
+    width: 155px;
+}
+.navigation > li:not(:last-child) {
+    margin-right: 5%;
+}
+
+
+/* -------------------- footer --------------------*/
+
+
+.base-footer {
+    position: relative;
+    width: 100%;
+    height: 484px;
+    padding: 97px 6% 10px 6%;
+    background-image: url('../img/footer-background.png');
+    background-size: 100% 100%;
+    background-position: left 8px;
+    background-repeat: no-repeat;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+/* .base-footer::after {
+    position: absolute;
+    content: '';
+    top: 58%;
+    left: 22%;
+    width: 763px;
+    height: 206px;
+    background-image: url('../img/footer-steps.png');
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+} */
+
+.footer-content-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+}
+
+.footer-left {
+    width: 50%;
+    margin-top: 81px;
+    margin-left: 19px;
+}
+.footer-left-info {
+    position: relative;
+    font-size: 20px;
+    line-height: 130%;
+}
+.footer-left-info > h3 {
+    font-family: "RobotoCondensed Medium", "Open Sans";
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+.footer-left-info > p {
+    margin-left: 48px;
+    margin-top: 10px;
+    letter-spacing: 2.4px;
+    position: relative;
+}
+.footer-left-info>p:nth-of-type(1)::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -49px;
+    width: 25px;
+    height: 31px;
+    background-image: url('../img/icon_geo.png');
+    background-repeat: no-repeat;
+}
+.footer-left-info>p:nth-of-type(2)::before {
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: -49px;
+    width: 32px;
+    height: 30px;
+    background-image: url('../img/icon_phone.png');
+    background-repeat: no-repeat;
+}
+.footer-socials {
+    margin-top: 30px;
+}
+.footer-socials > h3 {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+}
+.footer-socials > ul {
+    margin-top: 19px;
+    margin-left: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+    grid-auto-flow: column;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+.footer-socials > ul > li {position: relative;}
+.footer-socials > ul > li::before {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: -40px;
+    width: 33px;
+    height: 33px;
+    background-image: url('../img/VK.png');
+    background-repeat: no-repeat;
+}
+
+
+.footer-right {
+    width: 50%;
+    margin-top: 81px;
+}
+.footer-right > h3 {
+    text-align: center;
+    font-family: "RobotoCondensed Medium", "Open Sans";
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+.footer-sponsors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.footer-sponsors li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* --------------- общие темы ---------------- */
+
+.page_adress {
+    margin-top: 28px;
+    font-size: 16px;
+    color: #726D6D;
+}
+
+.page_adress span {
+    margin-left: 38px;
+    position: relative;
+}
+
+.page_adress span::before {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: -26px;
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/page_adress_figure.png');
+    background-repeat: no-repeat;
+}
+
+
+.page-title {
+    font-size: 60px;
+    margin-top: 79px;
+    margin-left: 3px;
+}

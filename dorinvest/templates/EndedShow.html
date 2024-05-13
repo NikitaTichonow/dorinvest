@@ -1,0 +1,15 @@
+{% load static %}
+
+{% block content %}
+
+
+{{ended_show.title}}
+{{ended_show.descriptions}}
+
+
+{% for photo in photoreport %}
+    <img src="{{ photo.photo.url }}" alt="Фотоотчет">
+{% endfor %}
+
+
+{% endblock %}

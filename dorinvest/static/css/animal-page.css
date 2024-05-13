@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "RobotoCondensed ExtraBold";
+    src: url("../fonts/RobotoCondensed-ExtraBold.ttf");
+}
+
+.animal-page {
+    margin: 0 7.3%;
+}
+
+.animal-page__info {
+    width: 100%;
+    min-height: 521px;
+    font-size: 33px;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    font-family: "RobotoCondensed Regular", "Open Sans";
+}
+.animal-page__info__img {
+    margin-right: 59px;
+    margin-bottom: 10px;
+    width: 42%;
+    height: 521px;
+    object-fit: cover;
+    border-radius: 14px;
+    float: left;
+}
+.animal-page__info__main-info {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 48% 48%;
+    grid-auto-flow: column;
+    margin-bottom: 50px;
+}
+.animal-page__info__main-info img {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.animal-page__info__main-info span {
+    position: relative;
+    top: -3px;
+    font-size: 23px;
+}
+
+.animal-page__info__description {
+    font-size: 28px;
+}
+
+.animal-page__extra-images {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3%;
+}
+.animal-page__extra-images img {
+    border-radius: 14px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}

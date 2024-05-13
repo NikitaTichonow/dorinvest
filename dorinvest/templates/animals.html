@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animal-page.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+<div class="animal-page">
+
+    <div class="page_adress">
+        <p>Главная <span>Каталог животных</span><span>Кошка {{animal.name}}</span></p>
+    </div>
+    <h1 class="page-title">{{animal.name}}</h1>
+
+    <div class="animal-page__info">
+        
+        <img src="{{ animal.image_animals.url }}" alt="" class="animal-page__info__img">
+        
+        <div class="animal-page__info__main-info">
+            <div>
+                <img src="{% static 'img/place-green.png' %}" alt="">
+                <span>Приют: {{animal.place}}</span>
+            </div>
+            <div>
+                <img src="{% static 'img/birthday-green.png' %}" alt="">
+                <span>Год рождения: {{animal.birthday}}</span>
+            </div>
+            <div>
+                <img src="{% static 'img/wool.png' %}" alt="">
+                <span>{{animal.wool}}</span>
+            </div>
+            <div>
+                <img src="{% static 'img/color.png' %}" alt="">
+                <span>Цвет: {{animal.color}}</span>
+            </div>
+            <div>
+                <img src="{% static 'img/activity.png' %}" alt="">
+                <span>{{animal.activity}}</span>
+            </div>
+            <div>
+                <img src="{% static 'img/friendly.png' %}" alt="">
+                <span>{{animal.friendly}}</span>
+            </div>
+        </div>
+
+        <p class="animal-page__info__description">{{animal.description}}</p>
+        
+    </div>
+
+    <div class="animal-page__extra-images">
+        {% for image in animal_images %}
+            <img src="{{ image.image.images.url }}" alt="{{ image.animal.name }}">
+        {% endfor %}
+    </div>
+
+
+</div>
+{% endblock %}

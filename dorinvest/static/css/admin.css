@@ -1,0 +1,30 @@
+#header {
+    background: #B2EFCF;
+    color: #000;
+}
+
+div.breadcrumbs {
+    background: #70B993;
+    color: #000;
+}
+
+.module caption {
+    background: #9F86C0;
+    color: #000;
+}
+
+a.section:visited {
+    color: #000;
+}
+
+div.breadcrumbs a {
+    color: #000;
+}
+
+#site-name a:link, #site-name a:visited {
+    color: #000;
+}
+
+#header a:link, #header a:visited, #logout-form button {
+    color: #000;
+}

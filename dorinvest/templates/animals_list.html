@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animals-page.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+<div class="animals-page">
+
+    <div class="page_adress">
+        <p>Главная <span>Каталог животных</span></p>
+    </div>
+
+    <h1 class="page-title">Каталог животных</h1>
+
+    <div class="animals-page__animals-wrapper">
+        {% for animal in animals %}
+        <a href="{% url 'animals' slug=animal.slug %}">
+            <div class="animals-page__animal">
+                <img src="{{ animal.image_animals.url }}" alt="animal foto" class="animals-page__animal__img">
+                <div class="animals-page__animal__info-wrapper">
+                    <div class="animals-page__animal__name">
+                        <span>{{animal.name}}</span>
+                    </div>
+                    <div class="animals-page__animal__info">
+                        <img src="{% static 'img/place-green.png' %}" alt="place icon">
+                        <span>Приют: {{animal.place}}</span>
+                    </div>
+                    <div class="animals-page__animal__info">
+                        <img src="{% static 'img/birthday-green.png' %}" alt="birthday icon">
+                        <span>год рождения: {{animal.birthday}}</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

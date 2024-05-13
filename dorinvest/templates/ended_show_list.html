@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ended-page.css' %}" />
+{% endblock %}
+
+
+
+{% block content %}
+<div class="ended-page">
+
+    <div class="page_adress">
+        <p>Главная <span>Прошедшие выставки</span></p>
+    </div>
+
+
+    <h1 class="page-title">Прошедшие выставки</h1>
+
+    <div class="ended-page__shows-wrapper">
+        {% for show in endedshow %}
+        <div>
+            <div class="ended-page__show">
+                <img src="{{ show.image.url }}" alt="{{ show.image }}" class="card-img-top" />
+                <div class="ended-page__show__info">
+                    <h2>{{ show.title }}</h2>
+                    <p class="ended-page__show__info__date">Дата проведения: <span>{{ show.date }}</span></p>
+                    <p class="ended-page__show__info__count">Количество участников: <span>{{ show.count }}</span></p>
+                    <p class="ended-page__show__info__housing">Количество пристройств: <span>{{ show.animal_housing }}</span></p>
+                </div>
+                <div class="ended-page__rotate-button">
+                    <img src="{% static 'img/ended-show_rotate-button.png' %}" alt="вращающаяся кнопка">
+                </div>
+            </div>
+            {% if show.descriptions or show.ended_show.all %}
+                <div class="ended-page__show__description">
+                    <div class="ended-page__show__description__text">
+                        {{ show.descriptions|linebreaks }}
+                    </div>
+                    {% if show.ended_show.all %}
+                        <div class="ended-page__show__photoreport">
+                            <h3>Фотоотчет</h3>
+                            <div class="ended-page__show__photoreport__photos">
+                                {% for report in show.ended_show.all %}
+                                    <img src="{{ report.photoreport.photo.url }}" alt="Фотоотчет">
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}
+
+
+{% block extra_js %}
+    <script type="text/javascript" src="{% static 'js/ended-page.js' %}"></script>
+{% endblock %}
